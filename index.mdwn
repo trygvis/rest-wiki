@@ -1,6 +1,7 @@
-Welcome to your new wiki.
+"Representational State Transfer (REST) is a software architecture style consisting of guidelines and best practices for creating scalable web services." -- [Wikipedia](http://en.wikipedia.org/wiki/Representational_state_transfer)
 
-All wikis are supposed to have a [[SandBox]],
-so this one does too.
+Discuss at `#rest` on freenode: <http://webchat.freenode.net/?channels=rest>
 
-----
+Logs at <http://irclog.greptilian.com/rest/today>
+
+[[!map pages="* and !*/* and !favicon.ico and !ikiwiki* and !index and !local.css and !recentchanges and !sandbox and !shortcuts and !sitemap and !smileys* and !style.css and !templates*"]]
