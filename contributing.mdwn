@@ -1,0 +1,36 @@
+# Contributing to the REST Wiki
+
+The sources for this wiki comes from a Git repository with a bunch of
+Markdown files. There are many ways to contribute:
+
+1. Create an issue describing what you would like to have improved.
+   [Create a new issue](https://github.com/trygvis/rest-wiki/issues/new).
+1. Edit the content in you local clone and create a pull request
+   [Create a pull request](https://github.com/trygvis/rest-wiki/pulls).
+
+## Building locally
+
+You don't need to do this to contribute, but sometimes it is useful to
+preview your changes
+
+    $ git clone https://github.com/trygvis/rest-wiki
+    $ ./rebuild.sh
+    $ gnome-open ../rest-wiki-html/index.html
+
+If you just want to check the Markdown layout of a single page, it
+might be easier to just use tools like `markdown`:
+
+    $ markdown index.mdwn > index.html
+    $ gnome-open index.html
+
+If you want to rebuild it with the same theme as used at the published
+site, clone the theme first:
+
+    $ cd ..
+    $ git clone https://github.com/ramseydsilva/ikiwiki-bootstrap-theme
+    $ cd rest-wiki
+    $ ./rebuild.sh
+
+Note that for this to work you need to view the generated site through
+a HTTP hosted site so that all references to Bootstrap and JQuery are
+properly resolved.

@@ -4,4 +4,4 @@ Discuss at `#rest` on freenode: <http://webchat.freenode.net/?channels=rest>
 
 Logs at <http://irclog.greptilian.com/rest/today>
 
-[[!map pages="* and !*/* and !favicon.ico and !ikiwiki* and !index and !local.css and !recentchanges and !sandbox and !shortcuts and !sitemap and !smileys* and !style.css and !templates*"]]
+[[!map pages="* and !*/* and !favicon.ico and !ikiwiki* and !index and !local.css and !recentchanges and !sandbox and !shortcuts and !sitemap and !smileys* and !style.css and !templates* and !*.sh"]]

@@ -1,0 +1,4 @@
+# Hypermedia Index
+
+* Atom
+* [Collection+JSON](collection-json)
