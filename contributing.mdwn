@@ -7,6 +7,7 @@ Markdown files. There are many ways to contribute:
    [Create a new issue](https://github.com/trygvis/rest-wiki/issues/new).
 1. Edit the content in you local clone and create a pull request
    [Create a pull request](https://github.com/trygvis/rest-wiki/pulls).
+1. Just click "Edit" on any page.
 
 ## Building locally
 
