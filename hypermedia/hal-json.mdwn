@@ -1,0 +1,48 @@
+# Hypertext Application Language (HAL) 
+
+## Summary
+
+* MIME type: `application/vnd.hal+json`. [IANA Registration](http://www.iana.org/assignments/media-types/application/vnd.hal+json)
+* [Home page](http://stateless.co/hal_specification.html)
+* [Specification](https://tools.ietf.org/html/draft-kelly-json-hal-07)
+* Base format: JSON
+
+## Description
+
+The hal+json media type is standard JSON with a minimal amount of structure. It expects a Resource Object as root object and defines two reserved properties: 
+
+* \_links: It's an object whose properties are link relation types and values are link objects
+* \_embedded: It's an object whose properties are link relation types and values are representations
+
+## Example Resource
+
+    {
+      "_links": {
+        "self": { "href": "/orders" },
+        "next": { "href": "/orders?page=2" },
+        "find": { "href": "/orders{?id}", "templated": true }
+      },
+      "_embedded": {
+        "orders": [{
+            "_links": {
+              "self": { "href": "/orders/123" },
+              "basket": { "href": "/baskets/98712" },
+              "customer": { "href": "/customers/7809" }
+            },
+            "total": 30.00,
+            "currency": "USD",
+            "status": "shipped"
+          },{
+            "_links": {
+              "self": { "href": "/orders/124" },
+              "basket": { "href": "/baskets/97213" },
+              "customer": { "href": "/customers/12369" }
+            },
+            "total": 20.00,
+            "currency": "USD",
+            "status": "processing"
+        }]
+      },
+      "currentlyProcessing": 14,
+      "shippedToday": 20
+    }
