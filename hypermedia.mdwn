@@ -2,3 +2,4 @@
 
 * Atom
 * [Collection+JSON](collection-json)
+* [HAL+JSON](hal-json)
